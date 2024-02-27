@@ -1,14 +1,55 @@
 /* style.css */
 
+header {
+    background-color: #112211;
+    color: white;
+    text-align: left;
+    text-indent: 2%;
+    padding: 0.1px;
+    height: 60px
+}
+
 body {
+    background-color: #001100;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-#visualization {
-    width: 800px;
-    height: 400px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
+#chart-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.line {
+    stroke-width: 2px;
+    opacity: 0.8;
+    stroke-linecap: round
+}
+
+.x-axis-path,
+.y-axis-path {
+    stroke: #FFFFFF;
+}
+
+.x-axis-tick,
+.y-axis-tick {
+    stroke: #FFFFFF;
+}
+
+.x-axis-text,
+.y-axis-text {
+    fill: #FFFFFF;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    background-color: #335533;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    display: none;
+    opacity: 0.75
 }

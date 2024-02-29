@@ -13,7 +13,6 @@ TerritorialStats is a web application that scrapes and visualizes statistics fro
 - **Backend**: Python, Flask
 - **Database**: SQLite
 - **Frontend**: JavaScript, D3.js
-- **Runtime Environment**: Node.js
 
 ## Getting Started (for Developers)
 These instructions are for setting up the project in a development environment.

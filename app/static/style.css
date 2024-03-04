@@ -1,0 +1,135 @@
+/* style.css */
+
+header {
+    background-color: #2D472D;
+    color: #E3E3E3; 
+    text-align: left;
+    text-indent: 2%;
+    padding: 0.1px;
+    height: 60px;
+}
+
+body {
+    background-color: #0A280A; 
+    font-family: 'Open Sans', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    color: #E3E3E3;
+}
+
+#chart-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0; 
+}
+
+.line {
+    stroke-width: 2px;
+    opacity: 0.8;
+    stroke-linecap: round;
+}
+
+.x-axis-path,
+.y-axis-path {
+    stroke: #BFBFBF; 
+}
+
+.x-axis-tick,
+.y-axis-tick {
+    stroke: #BFBFBF; 
+}
+
+.x-axis-text,
+.y-axis-text {
+    fill: #E3E3E3;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    background-color: #4D6651; 
+    color: white;
+    border: 1px solid #E3E3E3; 
+    border-radius: 4px;
+    display: none;
+    opacity: 0.9; 
+}
+
+/* Textbox */
+input {
+    border: 1px solid #E3E3E3; 
+    background-color: #f1fff1;
+    padding: 5px;
+    font-size: 16px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: auto;
+    width: 60%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+button:hover,
+input:hover,
+input:focus {
+    border: 1px solid #7DA87B; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+
+.autocomplete {
+    position: relative;
+  }
+  
+ /* Autocomplete container - this contains the autocomplete items: */
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #E3E3E3; /* Light border for the dropdown */
+    border-bottom: none;
+    border-top: none;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: auto;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1C3C1C; /* Darker shade for the dropdown background */
+    overflow: hidden;
+    max-height: 150px; /* Limit the size and add scroll */
+    overflow-y: auto;
+  }
+  
+  /* Autocomplete items - individual items within the container: */
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2D472D; /* Slightly lighter green for each item */
+    border-bottom: 1px solid #E3E3E3; /* Light border between items */
+  }
+  
+  /* Autocomplete item on hover: */
+  .autocomplete-items div:hover {
+    background-color: #3E5F3E; /* Even lighter green on hover */
+  }
+  
+  /* Active autocomplete item - when navigating through the items using the keyboard: */
+  .autocomplete-active {
+    background-color: #4D6651 !important; /* A different shade for the active item */
+    color: white; /* White text for contrast */
+  }
+  
+/* Adjustments for different sizes */
+
+
+@media (max-width: 768px) {
+    input {
+        margin-left: 5%;
+        width: 90%; 
+    }
+
+    #chart-container {
+        padding: 10px; 
+    }
+}

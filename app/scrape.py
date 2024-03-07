@@ -41,7 +41,7 @@ try:
     cursor = conn.cursor()
 
     # Execute SQL commands from the schema file
-    with open('../schema.sql', 'r') as sql_file:
+    with open('/root/schema.sql', 'r') as sql_file:
         cursor.executescript(sql_file.read())
 
     # Insert data into the clan_stats table

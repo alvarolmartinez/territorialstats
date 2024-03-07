@@ -5,6 +5,9 @@ import datetime as dt
 URL = "https://territorial.io/clans"
 CLAN_DATA_START = 6
 
+data = list()
+conn = None
+
 try:
     # Fetch clan data
     response = requests.get(url=URL)
@@ -18,7 +21,6 @@ try:
     sql_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
 
     # Process each line to extract the data
-    data = []
     for line in lines[CLAN_DATA_START:]:
         if line:
             parts = line.split(',')
@@ -35,7 +37,7 @@ except Exception as e:
 
 try:
     # Connect to SQLite database
-    conn = sqlite3.connect('data/territorial_stats_testing.db')
+    conn = sqlite3.connect('data/territorial_stats.db')
     cursor = conn.cursor()
 
     # Execute SQL commands from the schema file

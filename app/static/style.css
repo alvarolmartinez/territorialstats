@@ -21,7 +21,6 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 20px 0; 
 }
 
 .line {
@@ -108,18 +107,59 @@ input:focus {
     background-color: #2D472D; /* Slightly lighter green for each item */
     border-bottom: 1px solid #E3E3E3; /* Light border between items */
   }
-  
-  /* Autocomplete item on hover: */
-  .autocomplete-items div:hover {
-    background-color: #3E5F3E; /* Even lighter green on hover */
-  }
-  
+
   /* Active autocomplete item - when navigating through the items using the keyboard: */
   .autocomplete-active {
     background-color: #4D6651 !important; /* A different shade for the active item */
     color: white; /* White text for contrast */
   }
   
+
+#chosenClans {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 10px 
+}
+
+.chosen-clan {
+    display: inline-flex;
+    align-items: center;
+    margin: 7px;
+    padding: 8px 10px;
+    border-radius: 7px;
+    font-size: 1em;
+    background-color: #2D472D; /* Using the header background color for consistency */
+    color: #E3E3E3; /* Text color for contrast */
+}
+
+.chosen-clan button {
+    margin-left: 10px;
+    border: none;
+    background-color: #4D6651; /* Button color */
+    color: white; /* Text color */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    outline: none;
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Align vertically */
+    justify-content: center; /* Align horizontally */
+    padding: 0;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.chosen-clan button:hover {
+    background-color: #e74c3c; /* Slightly darker shade when hovering */
+}
+
+.chosen-clan button::before {
+    content: '×'; /* Unicode multiplication sign often looks better than the letter 'x' */
+    top: 30%;
+    font-family: Arial, sans-serif;
+}
 /* Adjustments for different sizes */
 
 

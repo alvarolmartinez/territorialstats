@@ -1,7 +1,7 @@
 # TerritorialStats
 
 ## Description
-TerritorialStats is a web application that scrapes and visualizes statistics from [territorial.io](https://territorial.io). Designed to provide insights into clan performances and trends, this tool uses Python Flask for backend operations, SQLite for data management, and D3.js for dynamic and interactive front-end visualizations.
+TerritorialStats is a web application that scrapes and visualizes statistics from [territorial.io](https://territorial.io). Designed to provide insights into clan performances and trends, this tool uses Python Flask for backend operations, SQLite for data management, and chart.js for dynamic and interactive front-end visualizations.
 
 ## Features
 - Real-time statistics updates from territorial.io clans.
@@ -12,14 +12,13 @@ TerritorialStats is a web application that scrapes and visualizes statistics fro
 ## Technologies Used
 - **Backend**: Python, Flask
 - **Database**: SQLite
-- **Frontend**: JavaScript, D3.js
+- **Frontend**: JavaScript, chart.js
 
 ## Getting Started (for Developers)
 These instructions are for setting up the project in a development environment.
 
 ### Prerequisites
 - Python 3.x
-- Node.js and npm (for D3.js)
 
 ### Setup for Development
 1. Clone the repository:
